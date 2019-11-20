@@ -9,6 +9,7 @@ export interface HitCounterProps {
 export class HitCounter extends cdk.Construct {
 
     public readonly handler: lambda.Function;
+    public readonly table: dynamo.Table;
 
     constructor(scope: cdk.Construct, id: string, props: HitCounterProps) {
         super(scope, id);
@@ -16,6 +17,7 @@ export class HitCounter extends cdk.Construct {
         const table = new dynamo.Table(this, 'Hits', {
             partitionKey: {name: 'path', type: dynamo.AttributeType.STRING}
         });
+        this.table = table;
 
         this.handler = new lambda.Function(this, 'HitCounterHandler', {
             runtime: lambda.Runtime.NODEJS_10_X,

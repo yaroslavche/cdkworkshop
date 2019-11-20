@@ -25,6 +25,7 @@
     "@aws-cdk/aws-dynamodb": "^1.17.1",
     "@aws-cdk/aws-lambda": "^1.17.1",
     "@aws-cdk/core": "^1.16.3",
-    "aws-sdk": "latest"
+    "aws-sdk": "latest",
+    "cdk-dynamo-table-viewer": "^3.0.5"
   }
 }
