@@ -9,3 +9,4 @@ cdk.out
 
 .idea
 !lambda/hello.js
+!lambda/hitcounter.js
