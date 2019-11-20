@@ -16,8 +16,8 @@ CdkWorkshopStack.Endpoint = https://yyyyyyyyyy.execute-api.{region}.amazonaws.co
 ```
 
 ```bash
-$ curl {CdkWorkshopStack.ViewHitCounterViewerEndpoint}{path}
+$ curl {CdkWorkshopStack.Endpoint}{path}
 ```
 
-`CdkWorkshopStack.Endpoint`:
+`CdkWorkshopStack.ViewHitCounterViewerEndpoint`:
 ![table](http://i.piccy.info/i9/8d65007bf0f74522f48d726e2b8f2077/1574245704/11382/1344752/Screenshot_20191120_122744.png)
